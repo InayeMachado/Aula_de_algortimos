@@ -1,0 +1,57 @@
+#include <stdio.h>
+
+// Faça um algoritmo que tenha duas variavis, representando altura e largura de um retangulo, calcule a área desta
+// figura. Imprima o resultado com uma variavel chamada area
+int main()
+{
+
+   int altura, largura;
+   float area;
+   
+    printf("Informe a altura\n");
+    scanf("%d", &altura);
+    
+    printf("Informe a largura\n");
+    scanf("%d", &largura);
+    
+    area = altura * largura;
+    
+    printf("A Área do retangulo é:\n %f",area);
+
+   
+   
+   
+   return 0;
+}
+
+#include <stdio.h>
+
+
+// Faça um algoritmo que leia do usuario 3 idades e diga a media delas
+int main()
+{
+
+   int idade1, idade2, idade3;
+   float media, totSoma;
+   
+    printf("Informe a 1° idade\n");
+    scanf("%d", &idade1);
+    
+    printf("Informe a 2° idade\n");
+    scanf("%d", &idade2);
+    
+    printf("Informe a 3° idade\n");
+    scanf("%d", &idade3);
+    
+    media = idade1 + idade2 + idade3;
+    totSoma = media /3;
+    
+    printf("A 1° idade informada foi: %d \n",idade1);
+    printf("A 2° idade informada foi: %d \n",idade2);
+    printf("A 3° idade informada foi: %d \n",idade3);
+    
+    // %.2f serve para mostrar apenas duas casas após a virgula
+    printf("A media das idades é: %.2f \n", totSoma);
+
+   return 0;
+}
