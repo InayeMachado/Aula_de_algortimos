@@ -1,4 +1,4 @@
-//Exercício 1 -  Descubra a multiplicação entre dois valores lidos e salve em uma variável.
+/////////////////////////Exercício 1 -  Descubra a multiplicação entre dois valores lidos e salve em uma variável.
 //Está fazendo a multiplicação errada
 
 int main()
@@ -18,5 +18,53 @@ int main()
 
    return 0;
 
+}
+
+//////////////////////////// Exercício 2 - Faça a média aritmética de três valores lidos e salve em uma variável.
+
+#include <stdio.h>
+
+int main()
+{
+    int valor1, valor2, valor3;
+    float totsoma, valorfinal;
+    
+    printf("Informe o 1° valor\n");
+    scanf("%d", &valor1);
+    
+    printf("Informe o 2° valor \n");
+    scanf("%d", &valor2);
+    
+    printf("Informe o 3° valor \n");
+    scanf("%d", &valor3);
+    
+    totsoma = valor1 + valor2 + valor3;
+    valorfinal = totsoma /3;
+    
+    printf("A média dos três números é: %.2f", valorfinal);
+
+    return 0;
+}
+
+
+//////////////////////////////////////////////// Exercício 3 - Dado um número lido defina o anterior e o próximo.
+
+#include <stdio.h>
+
+int main()
+{
+    
+    float Numero1, Anterior, Posterior;
+    
+    printf("Informe um número \n");
+    scanf("%f", &Numero1);
+    
+    Anterior = Numero1 - 1;
+    printf("O numero anterior é: %.2f \n", Anterior);
+    
+    Posterior = Numero1 + 1;
+    printf ("O número Posterior é: %.2f \n", Posterior);
+   
+    return 0;
 }
 
