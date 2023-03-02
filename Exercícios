@@ -1,0 +1,22 @@
+//Exercício 1 -  Descubra a multiplicação entre dois valores lidos e salve em uma variável.
+//Está fazendo a multiplicação errada
+
+int main()
+{
+   int valor1, valor2;
+   float result;
+   
+    printf("Informe o 1° valor \n");
+    scanf("%d", &valor1);
+    
+    printf("Informe o 2° valor\n");
+    scanf("%d", &valor2);
+    
+    result = valor1 * valor2;
+    
+    printf("A multiplicação entre os dois valores é:\n %.0f",result);
+
+   return 0;
+
+}
+
