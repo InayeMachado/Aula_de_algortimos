@@ -68,3 +68,20 @@ int main()
     return 0;
 }
 
+//////////////////////////////////////////////// Exercício 4 - Dado um número lido descubra qual a terça parte deste número.
+#include <stdio.h>
+
+int main()
+{
+    
+    float valor, tercaparte;
+    printf("Informe um número e descubra sua terça parte!\n");
+    scanf("%f", &valor);
+    
+    tercaparte = valor/3;
+    printf("A terça parte do número digitado é:  %.2f", tercaparte);
+    
+
+    return 0;
+}
+
