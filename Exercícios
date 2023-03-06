@@ -85,3 +85,27 @@ int main()
     return 0;
 }
 
+
+/******************************************************************************
+
+6 - Calcule o valor de um montante lido em reais 
+convertido em dólares.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    float Dolar, Real, Cota;
+    
+    printf("Digite a Cotação do dolar atualmente\n");
+    scanf("%f", &Cota);
+    
+    printf("Digite um valor em R$ que será convertido para dolar.\n");
+    scanf("%f", &Real);
+    
+    Dolar = Real/Cota;
+    printf("O valor em dolar é:%f", Dolar);
+
+    return 0;
+}
