@@ -35,3 +35,53 @@ int main()
    
     return 0;
 }
+
+
+
+
+//EXERCÍCIO: leia 4 idades e 5 preços, solicite para o usuário informar se deseja calcular 
+// media de idade ou media de preços;
+
+#include <stdio.h>
+
+int main()
+{
+   int idade1, idade2, idade3, idade4, mediaIdade, somaIdade;
+   
+   float mediaPreco, p1, p2, p3, p4, p5, somaPreco;
+   
+   char letra;
+   
+   printf("Digite uma letra para escolher a opção:\n\n");
+   
+   printf("i - Para digitar idades \n\n");
+   
+   printf("p - Paradigitar preços \n\n");
+   
+   scanf("%c", &letra);
+   
+   
+   if(letra == 'i'){
+       
+    printf("Digite 4 idades\n");
+    scanf("%d %d %d %d", &idade1, &idade2, &idade3, &idade4);
+    
+    somaIdade = idade1+idade2+idade3+idade4;
+    mediaIdade = somaIdade/4;
+    
+    printf("A media de preços é: %d", mediaIdade);
+    
+
+   }else
+   
+   {
+    printf("Digite 5 preços\n");
+    scanf("%f %f %f %f %f", &p1, &p2, &p3, &p4, &p5);
+    
+    somaPreco = p1+p2+p3+p4+p5; 
+    mediaPreco = somaPreco/5.0;
+    
+    printf("A media de preços é: \n%.2f", mediaPreco);
+   }
+    return 0;
+}
