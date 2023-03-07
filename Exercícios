@@ -109,3 +109,56 @@ int main()
 
     return 0;
 }
+
+*******************************************************************************/ Exercício 8 - Existindo 4 variáveis A, B, C e D você deverá somar e 
+multiplicar A com B, A com C e A com D, depois B com C, B 
+com D e por fim C com D.
+
+#include <stdio.h>
+
+int main()
+{
+     int a, b, c, d, Multi, Soma;
+    
+    printf("Informe o valor para A");
+    scanf("%d", &a);
+    
+    printf("Informe o valor para A");
+    scanf("%d", &b);
+    
+    printf("Informe o valor para A");
+    scanf("%d", &C);
+    
+    printf("Informe o valor para A");
+    scanf("%d", &D);
+    
+    
+    
+    printf("A Soma de A e B é: %d", Multi);
+    
+    printf("A Soma de A e C é: %d", Multi);
+    
+    printf("A Soma de A e D é: %d", Multi);
+    
+    printf("A Soma de B e C é: %d", Multi);
+    
+    printf("A Soma de B e D é: %d", Multi);
+    
+    printf("A Soma de C e D é: %d", Multi);
+    
+    
+    
+    printf("A Multiplicação de A por B é: %d", Multi);
+    
+    printf("A Multiplicação de A por C é: %d", Multi);
+    
+    printf("A Multiplicação de A por D é: %d", Multi);
+    
+    printf("A Multiplicação de B por C é: %d", Multi);
+    
+    printf("A Multiplicação de B por D é: %d", Multi);
+    
+    printf("A Multiplicação de C por D é: %d", Multi);
+
+    return 0;
+}
