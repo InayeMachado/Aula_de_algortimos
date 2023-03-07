@@ -1,6 +1,7 @@
 /////////////////////////Exercício 1 -  Descubra a multiplicação entre dois valores lidos e salve em uma variável.
 //Está fazendo a multiplicação errada
 
+#include <stdio.h>
 int main()
 {
    int valor1, valor2;
