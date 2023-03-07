@@ -1,0 +1,37 @@
+//
+
+#include <stdio.h>
+
+int main()
+{
+   int idade1, idade2, idade3;
+   float media, p1, p2, p3, soma;
+   char letra;
+   
+   printf("Digite uma letra para escolher a opção:\n\n");
+   printf("i - Para digitar idades \n\n");
+   printf("p - Paradigitar preços \n\n");
+   scanf("%c", &letra);
+   
+   
+   if(letra == 'i'){
+       
+    printf("Digite 3 idades\n");
+    scanf("%d %d %d", &idade1, &idade2, &idade3);
+    soma = idade1+idade2+idade3;
+   }else
+   {
+    printf("Digite 3 preços\n");
+    scanf("%f %f %f", &p1, &p2, &p3);
+    soma = p1+p2+p3; 
+   }
+   
+   // Coloca-se 3.0 pois a media definimos como float e as idades como inteiros.
+   // inteiros + inteiros o resultado será inteiro, por isso definimos 3.0 para
+   // tornar o resultado float
+   media = soma/3.0;
+   printf("%f", media);
+   printf("%c", letra);
+   
+    return 0;
+}
