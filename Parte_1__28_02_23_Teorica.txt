@@ -6,8 +6,8 @@
 ^
 
 --- Expressões lógicas
-A != B valor da variável diferente da variável B
-X == 1 Valor da variavel X igual a 1
+A != B valor da variável diferente da variável B;
+X == 1 Valor da variavel X igual a 1 - Igualdade;
 7 > 6; 7 maior que 6
 8 < 9; 8 Menor que 9
 1 <= Y 1 menor ou igual a variavel Y
