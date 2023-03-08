@@ -1,4 +1,5 @@
-//
+// Algoritmo que pede ao usuário escolher entre saber a media de 3 preços ou media de 3 idades. 
+// Neste algortimo existe a variável media, a varável media é escrita fora dos blocos de if e else;
 
 #include <stdio.h>
 
@@ -19,7 +20,9 @@ int main()
     printf("Digite 3 idades\n");
     scanf("%d %d %d", &idade1, &idade2, &idade3);
     soma = idade1+idade2+idade3;
+    
    }else
+   
    {
     printf("Digite 3 preços\n");
     scanf("%f %f %f", &p1, &p2, &p3);
@@ -29,6 +32,7 @@ int main()
    // Coloca-se 3.0 pois a media definimos como float e as idades como inteiros.
    // inteiros + inteiros o resultado será inteiro, por isso definimos 3.0 para
    // tornar o resultado float
+   
    media = soma/3.0;
    printf("%f", media);
    printf("%c", letra);
@@ -37,10 +41,15 @@ int main()
 }
 
 
-
-
-//EXERCÍCIO: leia 4 idades e 5 preços, solicite para o usuário informar se deseja calcular 
+// EXERCÍCIO: leia 4 idades e 5 preços, solicite para o usuário informar se deseja calcular 
 // media de idade ou media de preços;
+
+
+// Neste problema foram criadas duas variáveis novas para preço e para idade: somaIdade, mediaIdade, SomaPreco e mediaPreco;
+
+// Bloco = Bloco é o conjunto de linhas dentro do if ou else;
+// Neste caso, por serem variáveis respectivas às opeçaões em cada bloco, a conta e a mostra de resultados foram colocadas
+// junto com o seu if e else; 
 
 #include <stdio.h>
 
@@ -87,30 +96,9 @@ int main()
 }
 
 
+//EXERCÍCIO: leia 4 idades, 5 preços e media de alunos em 7 turmas, solicite para o usuário informar se deseja calcular 
+// media de idade, media de preços ou media de alunos, o programa de ve ler tanto letras minusuculas quanto maiusculas;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//EXERCÍCIO: leia 4 idades e 5 preços, solicite para o usuário informar se deseja calcular 
-// media de idade ou media de preços;
-
-
-
-// Outra maneira de fazer este problema seria: Ter apenas a variavel "media" e "soma",e deixar o calculo fora do if e else
 
 #include <stdio.h>
 
@@ -130,7 +118,6 @@ int main()
    
    printf("a - Para saber a media de alunos por laboratórios\n\n");
    
-   
    scanf("%c", &letra);
    
    
@@ -140,9 +127,6 @@ int main()
     scanf("%d %d %d %d", &idade1, &idade2, &idade3, &idade4);
     soma = idade1+idade2+idade3+idade4;
     qtde = 4.0;
-    
- 
-    
 
    }else if(letra == 'p' || letra == 'P')
    
@@ -161,9 +145,7 @@ int main()
     soma = lab1+lab2+lab3+lab4+lab5+lab6+lab7;
     qtde = 7.0;
    }
-   
-   
-   
+
    else{
        printf("Opção inválida, Digite i, I, P, p, A ou a\n");
    }
