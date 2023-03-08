@@ -85,3 +85,90 @@ int main()
    }
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//EXERCÍCIO: leia 4 idades e 5 preços, solicite para o usuário informar se deseja calcular 
+// media de idade ou media de preços;
+
+
+
+// Outra maneira de fazer este problema seria: Ter apenas a variavel "media" e "soma",e deixar o calculo fora do if e else
+
+#include <stdio.h>
+
+int main()
+{
+   int idade1, idade2, idade3, idade4, lab1, lab2, lab3, lab4, lab5, lab6, lab7;
+   
+   float media, p1, p2, p3, p4, p5, soma, qtde;
+   
+   char letra;
+   
+   printf("Digite uma letra para escolher a opção:\n\n");
+   
+   printf("i - Para saber a media de idade \n\n");
+   
+   printf("p - Para saber a media de preços \n\n");
+   
+   printf("a - Para saber a media de alunos por laboratórios\n\n");
+   
+   
+   scanf("%c", &letra);
+   
+   
+   if(letra == 'i' || letra =='I'){
+       
+    printf("Digite 4 idades\n");
+    scanf("%d %d %d %d", &idade1, &idade2, &idade3, &idade4);
+    soma = idade1+idade2+idade3+idade4;
+    qtde = 4.0;
+    
+ 
+    
+
+   }else if(letra == 'p' || letra == 'P')
+   
+   {
+    printf("Digite 5 preços\n");
+    scanf("%f %f %f %f %f", &p1, &p2, &p3, &p4, &p5);
+    soma = p1+p2+p3+p4+p5;
+    qtde = 5.0;
+   }
+   
+    else if(letra == 'a' || letra =='A')
+   
+   {
+    printf("Digite a quantidade de alunos em 7 laboratórios\n");
+    scanf("%d %d %d %d %d %d %d", &lab1, &lab2, &lab3, &lab4, &lab5, &lab6, &lab7);
+    soma = lab1+lab2+lab3+lab4+lab5+lab6+lab7;
+    qtde = 7.0;
+   }
+   
+   
+   
+   else{
+       printf("Opção inválida, Digite i, I, P, p, A ou a\n");
+   }
+   
+   media = soma/qtde;
+    printf("A media é: \n%.2f", media);
+    return 0;
+}
